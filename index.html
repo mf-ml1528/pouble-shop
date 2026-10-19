@@ -1469,5 +1469,34 @@
             }
         };
     </script>
+    <!-- === ฟอร์มสั่งซื้อผ่าน Email === -->
+<div style="max-width: 600px; margin: 30px auto; padding: 20px; background: #ffffff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); font-family: sans-serif;">
+    <h2 style="text-align: center; color: #333; margin-bottom: 15px;">🛒 แบบฟอร์มสั่งซื้อ / ติดต่อร้านค้า</h2>
+    
+    <!-- ⚠️ เปลี่ยนใส่อีเมลของคุณที่ช่องนี้ ⚠️ -->
+    <form action="https://formsubmit.co/nilldm010126@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="มีรายการสั่งซื้อใหม่จากเว็บ Double Shop!">
+
+        <div style="margin-bottom: 15px;">
+            <label style="display:block; font-weight:bold; margin-bottom: 5px; color: #333;">ชื่อลูกค้า:</label>
+            <input type="text" name="ชื่อลูกค้า" placeholder="ระบุชื่อของคุณ" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box;">
+        </div>
+
+        <div style="margin-bottom: 15px;">
+            <label style="display:block; font-weight:bold; margin-bottom: 5px; color: #333;">เบอร์โทรศัพท์:</label>
+            <input type="tel" name="เบอร์โทร" placeholder="เช่น 081-xxx-xxxx" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box;">
+        </div>
+
+        <div style="margin-bottom: 15px;">
+            <label style="display:block; font-weight:bold; margin-bottom: 5px; color: #333;">รายการสินค้า / ที่อยู่จัดส่ง / ข้อความ:</label>
+            <textarea name="รายละเอียดและสินค้า" placeholder="ระบุสินค้าที่สั่งซื้อ และที่อยู่จัดส่ง..." required style="width: 100%; height: 100px; padding: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box;"></textarea>
+        </div>
+
+        <button type="submit" style="width: 100%; background-color: #28a745; color: white; padding: 12px; border: none; border-radius: 6px; font-size: 16px; font-weight: bold; cursor: pointer;">
+            ส่งรายการสั่งซื้อทันที
+        </button>
+    </form>
+</div>
 </body>
 </html>
